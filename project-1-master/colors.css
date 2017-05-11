@@ -1,0 +1,111 @@
+/* Just to set up the space correctly */
+body{
+  margin: 0;
+  background-image: url('subtlebackgrounds/twinkle2.png');
+  overflow: hidden;
+}
+
+/* The title above the board */
+.title{
+  color: white;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 2px;
+  /*font-family: 'Poppins', sans-serif;*/
+}
+
+/* The form on the landing page */
+.frontForm{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.start{
+  margin-bottom: 20%;
+}
+
+
+/* The container for my game */
+.flexer{
+  display: flex;
+  width: 610px;         /* mediaQ changes */
+  height: 610px;        /* mediaQ changes */
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* The scoreboard */
+.scoreBoard{
+  align-self: center;
+  border: solid white;
+  width: 150px;           /* mediaQ changes */
+  height: 20%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 2;
+  position: absolute;
+  color: white;
+  text-align: center;
+  line-height: 160px;     /* mediaQ changes */
+}
+
+/* All Colored Buttons */
+.button{
+  height: 300px;          /* mediaQ changes */
+  width: 300px;           /* mediaQ changes */
+  border: 2px solid;
+  transition-duration: 0.5s;
+}
+
+/* The individual buttons */
+.red{
+  border-top-left-radius: 100%; /* Thanks Taka for telling me to try googling border-raidus for better understanding*/
+  border-color: red;
+}
+.redbg{
+  background-color: red;
+}
+
+.green{
+  border-bottom-left-radius: 100%;
+  border-color: green;
+}
+.greenbg{
+  background-color: green;
+}
+
+.yellow{
+  border-bottom-right-radius: 100%;
+  border-color: yellow;
+}
+.yellowbg{
+  background-color: yellow;
+}
+
+.blue{
+  border-top-right-radius: 100%;
+  border-color: blue;
+}
+.bluebg{
+  background-color: blue;
+}
+
+
+
+/* Breakpoint for media query is 620px*/
+@media screen and (max-width: 620px) {
+  .flexer{
+    width: 305px;
+    height: 305px;
+  }
+  .scoreBoard{
+    width: 75px;
+    height: 75px;
+    line-height: 35px;
+  }
+  .button{
+    width: 120px;
+    height: 120px;
+  }
+}
